@@ -7,7 +7,7 @@ jmeno.trim();
 surname.trim();
 
 //vytvoření emailu
-const prefixEmail = toLowerCase(jmeno.slice(0,3) + surname.slice(0,3));
+const prefixEmail = jmeno.slice(0,3).toLowerCase() + surname.slice(0,3).toLowerCase();
 const email = prefixEmail + "@fit.cvut.cz";
 
 document.body.innerHTML = "Váš e-mai je " + email
